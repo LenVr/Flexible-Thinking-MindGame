@@ -12,7 +12,7 @@ import { Card } from "./cards.js"
 window.addEventListener('load', init, false);
 
 
-
+/* Iniciar funcion */
 function init() {
     let divBttn = document.createElement('div');
     divBttn.classList.toggle('startButtonContainer', true)
