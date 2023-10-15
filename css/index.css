@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: radial-gradient(#6e1b83, black);
+    display: grid;
+    place-items: center;
+}
+
+.mainContainer {
+    margin: 0px;
+    text-align: center;
+    background-color: #ff569c;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: -4px 4px 4px 4px rgba(0, 0, 0, 0.6);
+}
+
+.mainContainer p {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+
+.mainContainer h1 {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+}
+
+.cardContainer {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #ff569c;
+    box-shadow: -4px 4px 4px 4px rgba(0, 0, 0, 0.6);
+}
+
+.cardContainer:hover {
+    cursor: pointer;
+}
+
+.containsCard {
+    margin: 20px;
+    text-align: center;
+    padding: 30px;
+    background-color: #f0cced;
+    border-radius: 5px;
+    box-shadow: -4px 4px 4px 4px rgba(0, 0, 0, 0.6);
+}
+
+
+/* Flipping a card css*/
+
+.flip-card {
+    perspective: 1000px;
+}
+
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+
+.flip-card-back {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+    border-radius: 5px;
+    background-color: #ff569c;
+    box-shadow: -4px 4px 4px 4px rgba(0, 0, 0, 0.6);
+}
+
+.flip-card-back:hover {
+    cursor: pointer;
+}
+
+
+.flip-card-back {
+    background-color: #ff569c;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.flip-card-back h3 {
+    font-size: 30px;
+}
+
+/* Button on the back */
+
+/* Start button */
+
+.startButtonContainer {
+    display: grid;
+    place-items: inherit;
+    position: absolute;
+    top: 0;
+    background: radial-gradient(#6e1b83, black);
+    width: 100%;
+    height: 100%;
+}
+
+.startButton:hover {
+    cursor: pointer;
+}
+
+.startButton {
+    padding: 0%;
+    background-color: rgba(255, 255, 255, 0.112);
+    width: 50%;
+    height: 20%;
+    font-size: 5vh;
+    color: white;
+    border-radius: 1vh;
+    border-color: white;
+}
+
+
+.textInst {
+    color: white;
+    font-size: 30px;
+    text-align: justify;
+}
+
+
+
+.imgBrain {
+    position: absolute;
+    top: 20px;
+    width: 200px;
+}
