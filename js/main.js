@@ -20,7 +20,7 @@ function init() {
 
     let img = document.createElement('img');
     img.classList = 'imgBrain'
-    img.src = '../assets/brain-icon-3.png';
+    img.src = './assets/brain-icon-3.png';
     divBttn.appendChild(img)
 
     let p = document.createElement('p');
